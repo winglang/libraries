@@ -89,6 +89,9 @@ pull_request_rules:
       - -check-failure=build-postgres
       - -check-pending=build-postgres
       - -check-stale=build-postgres
+      - -check-failure=build-pulumi
+      - -check-pending=build-pulumi
+      - -check-stale=build-pulumi
       - -check-failure=build-python
       - -check-pending=build-python
       - -check-stale=build-python
@@ -198,6 +201,9 @@ pull_request_rules:
       - -check-failure=build-postgres
       - -check-pending=build-postgres
       - -check-stale=build-postgres
+      - -check-failure=build-pulumi
+      - -check-pending=build-pulumi
+      - -check-stale=build-pulumi
       - -check-failure=build-python
       - -check-pending=build-python
       - -check-stale=build-python

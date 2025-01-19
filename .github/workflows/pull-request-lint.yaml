@@ -43,6 +43,7 @@ jobs:
             ngrok
             openai
             postgres
+            pulumi
             python
             react
             redis

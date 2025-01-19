@@ -31,6 +31,7 @@ publishing them for you.
 | [ngrok](./ngrok) | [@winglibs/ngrok](https://www.npmjs.com/package/@winglibs/ngrok) | * |
 | [openai](./openai) | [@winglibs/openai](https://www.npmjs.com/package/@winglibs/openai) | * |
 | [postgres](./postgres) | [@winglibs/postgres](https://www.npmjs.com/package/@winglibs/postgres) | sim, tf-aws |
+| [pulumi](./pulumi) | [@winglibs/pulumi](https://www.npmjs.com/package/@winglibs/pulumi) | sim |
 | [python](./python) | [@winglibs/python](https://www.npmjs.com/package/@winglibs/python) | sim, tf-aws |
 | [react](./react) | [@winglibs/react](https://www.npmjs.com/package/@winglibs/react) | sim, tf-aws |
 | [redis](./redis) | [@winglibs/redis](https://www.npmjs.com/package/@winglibs/redis) | sim |

@@ -565,6 +565,39 @@ jobs:
             cd postgres
             wing test
           timeout_minutes: 5
+  canary-pulumi:
+    name: Test pulumi
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          sparse-checkout: pulumi
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          registry-url: https://registry.npmjs.org
+      - name: Install winglang and dependencies
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 3
+          command: npm i -g winglang --loglevel verbose
+          timeout_minutes: 3
+      - name: Install dependencies
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 3
+          command: cd pulumi && npm i --include=dev --loglevel verbose
+          timeout_minutes: 3
+      - name: Run tests
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 3
+          command: |-
+            cd pulumi
+            wing test
+          timeout_minutes: 5
   canary-react:
     name: Test react
     runs-on: ubuntu-latest

@@ -1,0 +1,26 @@
+{
+  "name": "@winglibs/pulumi",
+  "description": "pulumi support for winglang",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winglang/winglibs.git",
+    "directory": "pulumi"
+  },
+  "peerDependencies": {
+    "@winglang/sdk": "*"
+  },
+  "wing": {
+    "platforms": [
+      "sim"
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.7.3",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7"
+  }
+}
